@@ -1,0 +1,12 @@
+Source: efc-runtime-rubygems1.9.1
+Section: efficientcloud
+Priority: extra
+Maintainer: EfficientCloud Technical Staff <support@efficientcloud.com>
+Build-Depends: debhelper (>= 7.0.50~), ruby1.9.1-full, ruby1.9.1-dev, rsync, quilt
+Standards-Version: 3.9.2
+
+Package: efc-runtime-rubygems1.9.1
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby1.9.1
+Description: Runtime Support
+  Runtime Support.

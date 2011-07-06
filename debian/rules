@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+override_dh_auto_install:
+	ruby1.9.1 setup.rb --destdir=debian/efc-runtime-rubygems1.9.1
+	install -d debian/efc-runtime-rubygems1.9.1/usr/lib/ruby/
+	mv debian/efc-runtime-rubygems1.9.1/usr/local/lib/site_ruby/1.9.1 debian/efc-runtime-rubygems1.9.1/usr/lib/ruby/
+
+%:
+	dh $@ --with=quilt
+

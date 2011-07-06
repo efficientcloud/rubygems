@@ -1,0 +1,17 @@
+efc-runtime-rubygems1.9.1 (1.8.5) unstable; urgency=low
+
+  * Rubygems version 1.8.5.
+
+ -- Christian Hofstaedtler <c.hofstaedtler@efficientcloud.com>  Wed, 06 Jul 2011 13:09:44 +0200
+
+efc-runtime-rubygems1.9.1 (1.7.2) unstable; urgency=low
+
+  * Rubygems version 1.7.2.
+
+ -- Christian Hofstaedtler <c.hofstaedtler@efficientcloud.com>  Tue, 31 May 2011 12:32:11 +0200
+
+efc-runtime-rubygems1.9.1 (0.0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- Christian Hofstaedtler <c.hofstaedtler@efficientcloud.com>  Tue, 03 May 2011 13:42:22 +0200

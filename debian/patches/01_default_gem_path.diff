@@ -1,0 +1,46 @@
+diff --git a/lib/rubygems/defaults.rb b/lib/rubygems/defaults.rb
+index e257c17..c7ba168 100644
+--- a/lib/rubygems/defaults.rb
++++ b/lib/rubygems/defaults.rb
+@@ -20,27 +20,7 @@ module Gem
+   # specified in the environment
+ 
+   def self.default_dir
+-    path = if defined? RUBY_FRAMEWORK_VERSION then
+-             [
+-               File.dirname(ConfigMap[:sitedir]),
+-               'Gems',
+-               ConfigMap[:ruby_version]
+-             ]
+-           elsif ConfigMap[:rubylibprefix] then
+-             [
+-              ConfigMap[:rubylibprefix],
+-              'gems',
+-              ConfigMap[:ruby_version]
+-             ]
+-           else
+-             [
+-               ConfigMap[:libdir],
+-               ruby_engine,
+-               'gems',
+-               ConfigMap[:ruby_version]
+-             ]
+-           end
+-
++    path = ['/', 'var', 'lib', 'gems', ConfigMap[:ruby_version]]
+     @default_dir ||= File.join(*path)
+   end
+ 
+@@ -80,11 +60,7 @@ module Gem
+   # The default directory for binaries
+ 
+   def self.default_bindir
+-    if defined? RUBY_FRAMEWORK_VERSION then # mac framework support
+-      '/usr/bin'
+-    else # generic install
+-      ConfigMap[:bindir]
+-    end
++    File.join('/', 'usr', 'local', 'bin')
+   end
+ 
+   ##
