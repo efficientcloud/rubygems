@@ -1,7 +1,7 @@
 #!/bin/sh
 
 undivert_it() {
-  dpkg-divert --package efc-runtime-rubygems1.9.1 --remove --rename --divert $1-efc-runtime-rubygems1.9.1-original $1
+  dpkg-divert --package hs-runtime-rubygems1.9.1 --remove --rename --divert $1-hs-runtime-rubygems1.9.1-original $1
 }
 
 if [ remove = "$1" ]; then

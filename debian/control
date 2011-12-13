@@ -1,12 +1,12 @@
-Source: efc-runtime-rubygems1.9.1
-Section: efficientcloud
+Source: hs-runtime-rubygems1.9.1
+Section: ruby
 Priority: extra
-Maintainer: EfficientCloud Technical Staff <support@efficientcloud.com>
+Maintainer: HostingStack Maintainers <maintainers@hostingstack.com>
 Build-Depends: debhelper (>= 7.0.50~), ruby1.9.1-full, ruby1.9.1-dev, rsync, quilt
 Standards-Version: 3.9.2
 
-Package: efc-runtime-rubygems1.9.1
+Package: hs-runtime-rubygems1.9.1
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, ruby1.9.1
-Description: Runtime Support
-  Runtime Support.
+Description: package management framework for Ruby libraries/applications
+  This package updates the Debian-provided Rubygems installation.
